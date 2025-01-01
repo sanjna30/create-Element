@@ -1,0 +1,17 @@
+.insect-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.insect {
+  position: absolute;
+  font-size: 2rem;
+  animation: moveInsect 5s infinite linear;
+}
+
+@keyframes moveInsect {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(20px, 20px); }
+}
