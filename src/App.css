@@ -1,17 +1,38 @@
-.insect-container {
+.app {
   position: relative;
   width: 100vw;
   height: 100vh;
+  background: #f0f8ff;
   overflow: hidden;
 }
-
 .insect {
   position: absolute;
-  font-size: 2rem;
-  animation: moveInsect 5s infinite linear;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@keyframes moveInsect {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(20px, 20px); }
+.insect:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+
+button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background: #131313;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #41e78e;
+}
+
